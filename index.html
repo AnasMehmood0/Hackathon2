@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    <div class="container">
+        <!-- Form Section -->
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label>
+                Name: <input type="text" id="name" required />
+            </label>
+            <label>
+                Email: <input type="email" id="email" required />
+            </label>
+
+            <h2>Education</h2>
+            <label>
+                Degree: <input type="text" id="degree" required />
+            </label>
+            <label>
+                School: <input type="text" id="school" required />
+            </label>
+            <label>
+                Year: <input type="text" id="year" required />
+            </label>
+
+            <h2>Work Experience</h2>
+            <label>
+                Company: <input type="text" id="company" required />
+            </label>
+            <label>
+                Role: <input type="text" id="role" required />
+            </label>
+            <label>
+                Duration: <input type="text" id="duration" required />
+            </label>
+
+            <h2>Skills</h2>
+            <label>
+                Skills (comma-separated): <input type="text" id="skills" required />
+            </label>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Resume Section -->
+        <div id="resume" class="resume">
+            <h2>Your Resume</h2>
+            <p><strong>Name:</strong> <span id="res-name"></span></p>
+            <p><strong>Email:</strong> <span id="res-email"></span></p>
+            <h3>Education</h3>
+            <p><strong>Degree:</strong> <span id="res-degree"></span></p>
+            <p><strong>School:</strong> <span id="res-school"></span></p>
+            <p><strong>Year:</strong> <span id="res-year"></span></p>
+            <h3>Work Experience</h3>
+            <p><strong>Company:</strong> <span id="res-company"></span></p>
+            <p><strong>Role:</strong> <span id="res-role"></span></p>
+            <p><strong>Duration:</strong> <span id="res-duration"></span></p>
+            <h3>Skills</h3>
+            <ul id="res-skills"></ul>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
